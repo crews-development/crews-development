@@ -1,20 +1,12 @@
-import * as React from "react";
-import {
-	ChakraProvider,
-	Box,
-	Text,
-	Link,
-	VStack,
-	Code,
-	Grid,
-	theme,
-} from "@chakra-ui/react";
-import { ColorModeSwitcher } from "./ColorModeSwitcher";
-import { Logo } from "./Logo";
+import { ChakraProvider, Box } from "@chakra-ui/react";
+import Theme from "./Theme";
+import * as Data from "./Data";
 
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
+import { Hero } from "./components/Hero";
+import { Nav } from "./components/Nav";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -34,29 +26,13 @@ export const App = () => {
 
 	// Initialize Firebase
 	const app = initializeApp(firebaseConfig);
-	//const analytics = getAnalytics(app);
+	getAnalytics(app);
 
 	return (
-		<ChakraProvider theme={theme}>
+		<ChakraProvider theme={Theme}>
 			<Box textAlign="center" fontSize="xl">
-				<Grid minH="100vh" p={3}>
-					<ColorModeSwitcher justifySelf="flex-end" />
-					<VStack spacing={8}>
-						<Logo h="40vmin" pointerEvents="none" />
-						<Text>
-							Edit <Code fontSize="xl">src/App.tsx</Code> and save to reload.
-						</Text>
-						<Link
-							color="teal.500"
-							href="https://chakra-ui.com"
-							fontSize="2xl"
-							target="_blank"
-							rel="noopener noreferrer"
-						>
-							Learn Chakra
-						</Link>
-					</VStack>
-				</Grid>
+				<Nav links={Data.navLinks} />
+				<Hero projects={Data.projects} />
 			</Box>
 		</ChakraProvider>
 	);
