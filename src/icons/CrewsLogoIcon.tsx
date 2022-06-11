@@ -25,7 +25,7 @@ export const CrewsLogoIcon = ({ fillColor, ...props }: CrewsLogoIconProps) => {
 		<>
 			<defs>
 				<clipPath id="a" clipPathUnits="userSpaceOnUse">
-					<path d="M0 1000h1000V0H0Z" />
+					<path fill="red" d="M0 1000h1000V0H0Z" />
 				</clipPath>
 			</defs>
 			<g clipPath="url(#a)" transform="matrix(1.33333 0 0 -1.33333 0 1333.3)">

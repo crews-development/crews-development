@@ -1,4 +1,4 @@
-import { ChakraProvider, Box } from "@chakra-ui/react";
+import { Box, ChakraProvider } from "@chakra-ui/react";
 import Theme from "./Theme";
 import * as Data from "./Data";
 
@@ -30,10 +30,8 @@ export const App = () => {
 
 	return (
 		<ChakraProvider theme={Theme}>
-			<Box textAlign="center" fontSize="xl">
-				<Nav links={Data.navLinks} />
-				<Hero projects={Data.projects} />
-			</Box>
+			<Nav links={Data.navLinks} />
+			<Hero projects={Data.projectCarousel} />
 		</ChakraProvider>
 	);
 };
