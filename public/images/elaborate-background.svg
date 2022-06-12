@@ -1,0 +1,26 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+	<defs>
+		<path d="M0-.5h1v2H0z" fill="#fed7d7" id="reuse-0"/>
+	</defs>
+	<defs>
+		<pattern xlink:href="#a" id="d" patternTransform="matrix(1.20897 -1.16285 -17.78038 -18.48547 0 0)"/>
+		<pattern patternUnits="userSpaceOnUse" width="9" height="1" patternTransform="scale(10)" id="a">
+			<use xlink:href="#reuse-0"/>
+		</pattern>
+		<pattern xlink:href="#c" id="f" patternTransform="matrix(1.20897 -1.16285 -17.78038 -18.48547 0 -1000)"/>
+		<pattern patternUnits="userSpaceOnUse" width="9" height="1" patternTransform="scale(10)" id="c">
+			<use xlink:href="#reuse-0"/>
+		</pattern>
+		<pattern patternUnits="userSpaceOnUse" width="1000" height="500" id="g">
+			<path fill="url(#d)" stroke-width="48" d="M0 0h1000v500H0z"/>
+		</pattern>
+		<linearGradient id="b">
+			<stop offset="0" stop-color="#fff5f5"/>
+			<stop offset="1" stop-color="#fed7d7"/>
+		</linearGradient>
+		<linearGradient xlink:href="#b" id="e" x1="0" y1="500" x2="1000" y2="500" gradientUnits="userSpaceOnUse"/>
+	</defs>
+	<path fill="url(#e)" d="M0 0h1000v1000H0z"/>
+	<path fill="none" d="M0 0h1000v500H0z"/>
+	<path transform="scale(1 -1)" fill="url(#f)" d="M0-1000h1000v500H0z"/>
+	<path fill="url(#g)" d="M0 0h1000v500H0z"/></svg>

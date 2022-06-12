@@ -44,7 +44,7 @@ export const navLinks: NavLink[] = [
 
 export const projects = {
 	cingle: {
-		name: "Cingle",
+		name: "Cipher",
 		title: "Full stack development in C#",
 		description:
 			"Build web pages in C# and publish to HTML, CSS, and Javascript.",
@@ -65,6 +65,8 @@ export const projectCarousel: ProjectBox[] = [
 	},
 	{
 		project: projects.elaborate,
-		textGradient: "linear(to-r, red.500, red.300)",
+		textGradient: "linear(to-r, red.300, red.500)",
+		textColor: "red.700",
+		backgroundImage: "url('/images/elaborate-background.svg')",
 	},
 ];
