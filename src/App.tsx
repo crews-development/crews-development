@@ -1,10 +1,10 @@
-import { Box, ChakraProvider } from "@chakra-ui/react";
-import Theme from "./Theme";
+import { ChakraProvider } from "@chakra-ui/react";
 import * as Data from "./Data";
+import Theme from "./Theme";
 
 // Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
+import { initializeApp } from "firebase/app";
 import { Hero } from "./components/Hero";
 import { Nav } from "./components/Nav";
 // TODO: Add SDKs for Firebase products that you want to use
