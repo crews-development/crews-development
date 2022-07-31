@@ -33,7 +33,8 @@ export const Hero = ({ projects }: HeroProps) => {
 			"background-color: rgba(0, 0, 0, 0.2);" +
 			"border-radius: 4px;" +
 			"color: white;" +
-			"padding: 30px 20px;";
+			"padding: 30px 20px;" +
+			"backdrop-filter: blur(12px);";
 
 		const paginationStyle =
 			"display: inline-block;" +
@@ -42,7 +43,8 @@ export const Hero = ({ projects }: HeroProps) => {
 			"width: auto;" +
 			"left: 50%;" +
 			"transform: translateX(-50%);" +
-			"padding: 2px;";
+			"padding: 2px;" +
+			"backdrop-filter: blur(12px);";
 
 		const bulletStyle = "background-color: #fff";
 
