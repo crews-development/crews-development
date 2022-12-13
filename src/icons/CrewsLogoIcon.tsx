@@ -1,5 +1,5 @@
 import { Icon, IconProps } from "@chakra-ui/react";
-import { contrastText } from "../lib/ColorFunctions";
+import { contrastText } from "../lib/colorFunctions";
 
 export interface CrewsLogoIconProps extends IconProps {
 	fillColor?: string;

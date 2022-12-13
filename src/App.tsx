@@ -1,6 +1,6 @@
 import { ChakraProvider } from "@chakra-ui/react";
-import * as Data from "./Data";
-import Theme from "./Theme";
+import * as Data from "./data";
+import Theme from "./theme";
 import { Hero } from "./components/Hero";
 import { Nav } from "./components/Nav";
 

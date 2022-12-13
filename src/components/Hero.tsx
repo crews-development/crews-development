@@ -11,7 +11,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { ProjectBox } from "../Data";
+import { ProjectBox } from "../data";
 
 export type HeroProps = {
 	projects: ProjectBox[];

@@ -61,7 +61,7 @@ export const projectCarousel: ProjectBox[] = [
 	{
 		project: projects.cingle,
 		textColor: "whiteAlpha.900",
-		backgroundImage: "url('/images/cingle-background.svg')",
+		backgroundImage: "url('/images/cipher-background.svg')",
 	},
 	{
 		project: projects.elaborate,
