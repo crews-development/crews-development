@@ -9,9 +9,9 @@ import { LinkIcon } from "@chakra-ui/icons";
 import { useScrollPosition } from "@n8tb1t/use-scroll-position";
 import React from "react";
 import { useState } from "react";
-import { NavLink } from "../data";
-import { CrewsLogoIcon } from "../icons/CrewsLogoIcon";
-import Theme from "../theme";
+import { NavLink } from "../../lib/types";
+import { CrewsLogoIcon } from "../../icons/CrewsLogoIcon";
+import Theme from "../../lib/theme";
 import { ColorModeSwitcher } from "./ColorModeSwitcher";
 
 export type NavProps = {

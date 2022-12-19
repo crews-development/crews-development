@@ -1,9 +1,14 @@
 import {
 	Box,
+	Button,
 	Center,
+	Flex,
 	Heading,
+	SimpleGrid,
 	Text,
 	useBreakpointValue,
+	Wrap,
+	WrapItem,
 } from "@chakra-ui/react";
 import { useEffect } from "react";
 import { A11y, Autoplay, Navigation, Pagination } from "swiper";
@@ -11,7 +16,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { ProjectBox } from "../data";
+import { ProjectBox } from "../lib/types";
 
 export type HeroProps = {
 	projects: ProjectBox[];
@@ -98,6 +103,34 @@ export const Hero = ({ projects }: HeroProps) => {
 								<Text color={p.textColor} fontSize="lg">
 									{p.project.description}
 								</Text>
+								{p.project.homepage || p.project.source ? (
+									<Wrap justify="center" padding={4}>
+										{p.project.homepage ? (
+											<WrapItem>
+												<Button
+													variant="outline"
+													borderColor={p.textColor}
+													color={p.textColor}
+													onClick={() => window.open(p.project.homepage)}
+												>
+													Learn More
+												</Button>
+											</WrapItem>
+										) : null}
+										{p.project.source ? (
+											<WrapItem>
+												<Button
+													variant="outline"
+													borderColor={p.textColor}
+													color={p.textColor}
+													onClick={() => window.open(p.project.source)}
+												>
+													View Source
+												</Button>
+											</WrapItem>
+										) : null}
+									</Wrap>
+								) : null}
 							</Box>
 						</Center>
 					</SwiperSlide>
