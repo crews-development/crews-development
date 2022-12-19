@@ -105,7 +105,7 @@ export const infoTiles: Info[] = [
 export const profiles: Profile[] = [
 	{
 		name: "Tommy Crews",
-		imageUrl: "/images/tommy.png",
+		imageUrl: "/images/tommy.webp",
 		content:
 			"Tommy started Crews Development and is its primary contributor. With over ten years of software development experience, he specializes in .NET web and desktop development.",
 		link: {
