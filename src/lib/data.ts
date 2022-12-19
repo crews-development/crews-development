@@ -18,12 +18,19 @@ export const navLinks: NavLink[] = [
 ];
 
 export const projects: Record<string, Project> = {
-	cingle: {
+	cipher: {
 		name: "Cipher",
 		title: "Full stack development in C#",
 		description:
 			"Build web pages in C# and publish to HTML, CSS, and Javascript.",
 		source: "https://github.com/crews-development/cipher",
+	},
+	repoRabbit: {
+		name: "Repo Rabbit",
+		title: "Intelligent Repository Pattern Implementation",
+		description:
+			"Create a robust repository pattern implementation with any provider.",
+		unreleased: true,
 	},
 	elaborate: {
 		name: "Elaborate",
@@ -32,19 +39,37 @@ export const projects: Record<string, Project> = {
 			"Convert raw data into localized strings with simple functions.",
 		source: "https://github.com/twcrews/elaborate",
 	},
+	lastPlace: {
+		name: "Last Place",
+		title: "Leaderboards and More",
+		description:
+			"Create and track leaderboards and metrics for games, competitions, races, and more.",
+		unreleased: true,
+	},
 };
 
 export const projectBoxes: ProjectBox[] = [
 	{
-		project: projects.cingle,
+		project: projects.cipher,
 		textColor: "whiteAlpha.900",
 		backgroundImage: "url('/images/cipher-background.svg')",
+	},
+	{
+		project: projects.repoRabbit,
+		textColor: "whiteAlpha.900",
+		backgroundImage: "url('/images/repo-rabbit-background.svg')",
 	},
 	{
 		project: projects.elaborate,
 		textGradient: "linear(to-r, red.300, red.500)",
 		textColor: "red.700",
 		backgroundImage: "url('/images/elaborate-background.svg')",
+	},
+	{
+		project: projects.lastPlace,
+		textGradient: "linear(to-r, purple.400, pink.400)",
+		textColor: "pink.200",
+		backgroundImage: "url('/images/last-place-background.svg')",
 	},
 ];
 
@@ -56,7 +81,7 @@ export const infoTiles: Info[] = [
 			"We design and build all our software from the ground up. Databases, back end, front end, even graphic design and marketing materials—we do it all.",
 		link: {
 			text: "View Projects",
-			url: "#projects",
+			url: "#projects-link",
 		},
 	},
 	{
@@ -82,6 +107,10 @@ export const profiles: Profile[] = [
 		name: "Tommy Crews",
 		imageUrl: "/images/tommy.png",
 		content:
-			"Tommy started Crews Development and is its primary contributor. With over ten years of software development experience, he specializes in web development.",
+			"Tommy started Crews Development and is its primary contributor. With over ten years of software development experience, he specializes in .NET web and desktop development.",
+		link: {
+			text: "View More",
+			url: "https://tommy.crews.dev",
+		},
 	},
 ];
