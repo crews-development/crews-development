@@ -7,6 +7,7 @@ export type Project = {
 	homepage?: string;
 	source?: string;
 	icon?: React.ElementType;
+	unreleased?: boolean;
 };
 
 export type ProjectBox = {

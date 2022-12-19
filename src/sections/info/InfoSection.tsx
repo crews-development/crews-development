@@ -22,7 +22,16 @@ export const InfoSection = () => {
 							content={t.content}
 							footer={
 								t.link ? (
-									<Button onClick={() => window.open(t.link?.url)}>
+									<Button
+										onClick={
+											t.link.url.startsWith("#")
+												? () =>
+														document
+															.getElementById(t.link!.url.slice(1))
+															?.scrollIntoView()
+												: () => window.open(t.link?.url)
+										}
+									>
 										{t.link.text ?? "Details"}
 									</Button>
 								) : undefined

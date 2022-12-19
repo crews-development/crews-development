@@ -1,6 +1,7 @@
 import {
 	Avatar,
 	Box,
+	Button,
 	Card,
 	CardBody,
 	Heading,
@@ -16,6 +17,7 @@ export const About = () => {
 
 	return (
 		<Box
+			id="about-link"
 			padding={4}
 			backgroundColor={colorMode === "dark" ? undefined : "gray.50"}
 		>
@@ -43,6 +45,14 @@ export const About = () => {
 								<Box>
 									<Heading size="lg">{p.name}</Heading>
 									<Text>{p.content}</Text>
+									{p.link ? (
+										<Button
+											onClick={() => window.open(p.link?.url)}
+											marginTop={4}
+										>
+											{p.link.text ?? "View More"}
+										</Button>
+									) : null}
 								</Box>
 							</SimpleGrid>
 						</CardBody>

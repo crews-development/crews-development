@@ -1,10 +1,9 @@
 import {
+	Badge,
 	Box,
 	Button,
 	Center,
-	Flex,
 	Heading,
-	SimpleGrid,
 	Text,
 	useBreakpointValue,
 	Wrap,
@@ -103,6 +102,11 @@ export const Hero = ({ projects }: HeroProps) => {
 								<Text color={p.textColor} fontSize="lg">
 									{p.project.description}
 								</Text>
+								{p.project.unreleased ? (
+									<Badge marginTop={4} variant="outline" color={p.textColor}>
+										Coming Soon
+									</Badge>
+								) : null}
 								{p.project.homepage || p.project.source ? (
 									<Wrap justify="center" padding={4}>
 										{p.project.homepage ? (
