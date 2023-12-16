@@ -1,6 +1,6 @@
-import { extendTheme } from "@chakra-ui/react";
+import { ThemeConfig, extendTheme } from "@chakra-ui/react";
 
-const theme = extendTheme({
+const theme: ThemeConfig = extendTheme({
 	colors: {
 		brand: {
 			500: "#3f8aff",
@@ -11,6 +11,8 @@ const theme = extendTheme({
 		heading: "Lexend, system-ui, sans-serif",
 		mono: "Noto Sans Mono, monospace",
 	},
+	initialColorMode: "dark",
+	useSystemColorMode: "true"
 });
 
 export default theme;

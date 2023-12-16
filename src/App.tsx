@@ -1,24 +1,13 @@
-import { Box, ChakraProvider, Flex } from "@chakra-ui/react";
-import * as Data from "./lib/data";
+import { Box, Center, ChakraProvider, Heading } from "@chakra-ui/react";
 import Theme from "./lib/theme";
-import { About } from "./sections/About";
-import { Footer } from "./sections/Footer";
-import { Hero } from "./sections/Hero";
-import { InfoSection } from "./sections/info/InfoSection";
-import { Nav } from "./sections/nav/Nav";
-import { ProjectsSection } from "./sections/projects/ProjectsSection";
 
 export const App = () => (
 	<ChakraProvider theme={Theme}>
-		<Flex direction="column" minHeight="100vh">
-			<Nav links={Data.navLinks} />
-			<Box flex={1}>
-				<Hero projects={Data.projectBoxes} />
-				<InfoSection />
-				<ProjectsSection />
-				<About />
+		<Center height="100vh" background="radial-gradient(circle, rgba(30, 40, 60, 1) 0%, rgba(0,212,255,0) 50%);">
+			<Box display="flex" flexDirection="column" alignItems="center" gap="24px">
+				<Heading fontSize="80px">🚧</Heading>
+				<Heading>Under Construction</Heading>
 			</Box>
-			<Footer />
-		</Flex>
+		</Center>
 	</ChakraProvider>
 );
